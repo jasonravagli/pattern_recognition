@@ -43,15 +43,6 @@ MatrixXf SequenceGenerator::generateRandomProbsMatrix(int rows, int cols) {
 	for(int i = 0; i < rows; i++){
 		float rowSum = matrix.row(i).sum();
 		matrix.row(i) = matrix.row(i)/rowSum;
-
-		/*for(int j = 0; j < cols - 1; j++){
-
-			float probability = ((float) rand()) / RAND_MAX * (1 - rowSum);
-			matrix(i, j) = probability;
-			rowSum += probability;
-		}
-
-		matrix(i, cols - 1) = 1 - rowSum;*/
 	}
 
 	return matrix;
