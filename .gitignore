@@ -52,3 +52,6 @@
 
 # CMake
 cmake-build-*/
+
+# Exceptions
+!eigen-3.3.7/
