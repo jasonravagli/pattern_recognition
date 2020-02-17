@@ -22,7 +22,9 @@ public:
      * @param sequence : main sequence to recognize the pattern in
      * @param query : the pattern to recognize
      */
-	Output recognizePattern(vector<int> sequence, vector<int> pattern);
+	Output recognizePatternSequential(vector<int> sequence, vector<int> pattern);
+
+	Output recognizePatternOpenMP(vector<int> sequence, vector<int> pattern);
 
 private:
 
